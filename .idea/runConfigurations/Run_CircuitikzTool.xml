@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run CircuitikzTool" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/CircuitikzTool.jar" />
+    <option name="WORKING_DIRECTORY" value="C:\Users\jonas\Documents\Devel\QuickTexTemplate" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2" />
+  </configuration>
+</component>
