@@ -6,7 +6,7 @@
 
     <artifactId>QuickTexTemplate</artifactId>
     <groupId>mohr.jonas</groupId>
-    <version>1.1</version>
+    <version>1.1.0</version>
 
     <name>QuickTexTemplate</name>
 
@@ -23,7 +23,7 @@
         </repository>
         <repository>
             <id>private-repo</id>
-            <url>http://192.168.178.80:9000</url>
+            <url>http://192.168.178.80:8080</url>
         </repository>
     </repositories>
 
@@ -46,8 +46,8 @@
             </plugin>
             <plugin>
                 <groupId>mohr.jonas</groupId>
-                <artifactId>QuickTexPlugin</artifactId>
-                <version>1.0.9</version>
+                <artifactId>quick-tex-maven-plugin</artifactId>
+                <version>1.0.14-SNAPSHOT</version>
                 <configuration>
                     <pdflatex>!!CHANGE ME!! (pom.xml, line 52)</pdflatex>
                 </configuration>
@@ -78,7 +78,7 @@
         <dependency>
             <groupId>mohr.jonas</groupId>
             <artifactId>QuickTex</artifactId>
-            <version>0.8.3</version>
+            <version>0.8.6-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

@@ -518,3 +518,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,kotlin,maven,intellij+all,latex
+
+# Add circuitikztool
+!CircuitikzTool.jar
+
+# Add pdfs
+!target/pdf/*.pdf
+
