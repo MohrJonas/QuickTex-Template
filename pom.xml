@@ -4,16 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>QuickTexTemplate</artifactId>
+    <artifactId>quick-tex-template</artifactId>
     <groupId>mohr.jonas</groupId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 
-    <name>QuickTexTemplate</name>
+    <name>QuickTex-Template</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>18</kotlin.compiler.jvmTarget>
+        <kotlin.compilter.incremental>true</kotlin.compilter.incremental>
     </properties>
 
     <repositories>
@@ -21,6 +22,7 @@
             <id>mavenCentral</id>
             <url>https://repo1.maven.org/maven2/</url>
         </repository>
+        <!--Host for quick-tex and quick-tex-maven-plugin-->
         <repository>
             <id>private-repo</id>
             <url>http://192.168.178.80:8080</url>
@@ -47,7 +49,7 @@
             <plugin>
                 <groupId>mohr.jonas</groupId>
                 <artifactId>quick-tex-maven-plugin</artifactId>
-                <version>1.0.14-SNAPSHOT</version>
+                <version>1.0.15-SNAPSHOT</version>
                 <configuration>
                     <pdflatex>!!CHANGE ME!! (pom.xml, line 52)</pdflatex>
                 </configuration>
@@ -77,8 +79,8 @@
         </dependency>
         <dependency>
             <groupId>mohr.jonas</groupId>
-            <artifactId>QuickTex</artifactId>
-            <version>0.8.6-SNAPSHOT</version>
+            <artifactId>quick-tex</artifactId>
+            <version>0.8.7-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
