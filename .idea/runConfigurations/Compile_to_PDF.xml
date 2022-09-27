@@ -30,7 +30,7 @@
             <list>
               <option value="kotlin:compile" />
               <option value="resources:copy-resources" />
-              <option value="QuickTexPlugin:compile-latex" />
+              <option value="quick-tex:compile-latex" />
             </list>
           </option>
           <option name="pomFileName" />
