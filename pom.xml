@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--suppress KotlinMavenPluginPhase -->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -22,53 +23,14 @@
             <id>mavenCentral</id>
             <url>https://repo1.maven.org/maven2/</url>
         </repository>
-        <!--Host for quick-tex and quick-tex-maven-plugin-->
         <repository>
-            <id>private-repo</id>
-            <url>http://192.168.178.80:8080</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
     <build>
-        <sourceDirectory>src/main/kotlin</sourceDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-maven-plugin</artifactId>
-                <version>1.7.10</version>
-                <executions>
-                    <execution>
-                        <id>compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>mohr.jonas</groupId>
-                <artifactId>quick-tex-maven-plugin</artifactId>
-                <version>1.0.15-SNAPSHOT</version>
-                <configuration>
-                    <pdflatex>!!CHANGE ME!! (pom.xml, line 52)</pdflatex>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.0</version>
-                <configuration>
-                    <outputDirectory>${basedir}/target/assets</outputDirectory>
-                    <resources>
-                        <resource>
-                            <directory>src/main/resources</directory>
-                            <filtering>false</filtering>
-                        </resource>
-                    </resources>
-                </configuration>
-            </plugin>
-        </plugins>
+        <sourceDirectory>src</sourceDirectory>
     </build>
 
     <dependencies>
@@ -78,9 +40,14 @@
             <version>1.7.10</version>
         </dependency>
         <dependency>
-            <groupId>mohr.jonas</groupId>
-            <artifactId>quick-tex</artifactId>
-            <version>0.8.7-SNAPSHOT</version>
+            <groupId>com.github.mohrjonas</groupId>
+            <artifactId>quicktex</artifactId>
+            <version>d1d15ec5eb</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-script-runtime</artifactId>
+            <version>1.7.22</version>
         </dependency>
     </dependencies>
 </project>

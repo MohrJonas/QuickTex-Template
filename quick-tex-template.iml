@@ -22,11 +22,12 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/kotlin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/libraries" />
-      <excludeFolder url="file://$MODULE_DIR$/out" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/fileTemplates/code" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/fileTemplates/internal" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/libraries" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -35,7 +36,8 @@
     <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10" level="project" />
-    <orderEntry type="library" name="Maven: mohr.jonas:quick-tex:0.8.7-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.mohrjonas:quicktex:d1d15ec5eb" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.12.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-script-runtime:1.7.22" level="project" />
   </component>
 </module>
